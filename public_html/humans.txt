@@ -1,0 +1,19 @@
+/* SITE */
+
+Site name : UPBGE Main
+Site url : https://upbge.org/
+Created on : 12 Nov. 2015
+Language : English
+Hosting : OVH
+Standards: HTML5, CSS3, PHP, JS
+Components: jQuery, bootstrap, owl-carousel
+
+
+/* TEAM */
+
+Editors: UPBGE Members
+Webmaster: Thibaut MANCEAU
+
+/* CONTENT */
+
+This site is a description of the UPBGE Project
