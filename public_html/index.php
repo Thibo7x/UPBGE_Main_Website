@@ -83,12 +83,12 @@ session_start();
             </div>
             <div class="col-md-6 col-xs-12">
               <h3>Contact</h3>
-              <h5>IRC irc.freenode.net</h5>
+              <h5><b>IRC</b> irc.freenode.net</h5>
               <ul>
                 <li>#upbgeusers</li>
                 <li>#upbgecoders</li>
               </ul>
-              <h5>MAIL</h5>
+              <h5><b>Mail</b></h5>
               <ul>
                 <li><a href="MAILTO:tristan@upbge.org">tristan@upbge.org</a></li>
                 <li><a href="MAILTO:alexis.gros99@gmail.com">alexis.gros99@gmail.com</a></li>
