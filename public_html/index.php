@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 ?>
@@ -23,9 +25,9 @@ session_start();
         <div class="col-md-7">
           <h3>Last pictures</h3>
           <div id="carousel" class="owl-carousel">
-            <div class="item"><img src="/webroot/images/carousel/carousel1.jpg" alt="1"></div>
-            <div class="item"><img src="/webroot/images/carousel/carousel2.jpg" alt="2"></div>
-            <div class="item"><img src="/webroot/images/carousel/carousel3.jpg" alt="3"></div>
+
+            <?php require("../controler/carousel.php"); // Generate lines for carousel from carousel.txt ?>
+
           </div>
         </div>
         <div class="col-md-5">
@@ -37,6 +39,17 @@ session_start();
 
                 require ("../controler/connexionDB.php");
 
+                function BBcode($txt) {  //Conversion BBCode
+      					    $tab = array(
+      					    '#\[u\](.*)\[/u\]#Ui' => '<strong>$1</strong>',
+      					    '#\[b\](.*)\[/b\]#Ui' => '<big>$1</big>',
+      					    '#\[i\](.*)\[/i\]#Ui'   => '<em>$1</em>',
+      					    '#\[url=(.+)\](.+)\[/url\]#Ui' => '<a href="$1">$2</a>',
+      					    '#\[img\](.+)\[/img\]#Ui' => '<img src="$1" alt="$1"/>'
+      					    );
+      					    return(preg_replace(array_keys($tab) , array_values($tab) , $txt));
+      					}
+
               	$req = $bdd->query('SELECT * FROM News ORDER BY datee DESC');
               	$req->execute();
 
@@ -45,7 +58,7 @@ session_start();
                   <article>
                     <h4><?php echo $donnees['title']; ?></h4>
                     <i><?php echo $donnees['datee']; ?></i>
-                    <p><?php echo $donnees['texte']; ?></p>
+                    <p><?php echo BBcode($donnees['texte']); ?></p>
                   </article>
                   <?php
               	}
@@ -65,7 +78,6 @@ session_start();
             		<li>Diego Lopes (TwisterGE)</li>
             		<li>Tristan Porteries (panzergame)</li>
             		<li>Jorge Bernal (lordloki)</li>
-            		<li>Pierluigi Grassi (pgi)</li>
             		<li>Lee Pugh (pqftgs)</li>
       	      </ul>
             </div>

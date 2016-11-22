@@ -42,6 +42,9 @@ session_start();
         If this collect embarrass you, you can activate the "Do Not Track" option in your browser. You can also install any ad blocker.<br />
         Finally, you can click here to block the collect (you have to accept cookies) :<br />
         <iframe style="border: 0; height: 200px; width: 600px;" src="https://piwik.upbge.org/index.php?module=CoreAdminHome&action=optOut&language=en"></iframe>
+
+        <h3>Source code</h3>
+        <p>The source code of this website is published under GPLv3 licence (<a href="https://github.com/Thibo7x/UPBGE_Main_Website">here</a>).</p>
       </div>
         <br />
       <div class="row">
