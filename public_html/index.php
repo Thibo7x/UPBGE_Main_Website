@@ -22,7 +22,7 @@ session_start();
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-lg-8 col-md-7">
           <h3>Last pictures</h3>
           <div id="carousel" class="owl-carousel">
 
@@ -30,10 +30,10 @@ session_start();
 
           </div>
         </div>
-        <div class="col-md-5">
+        <div class=" col-lg-4 col-md-5">
           <div class="row">
-            <div class="col-xs-10">
-              <h3>News</h3>
+            <h3>News</h3>
+            <div class="col-xs-offset-1 col-xs-10">
               <div id="newsArticles">
                 <?php
 
